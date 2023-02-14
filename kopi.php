@@ -8,6 +8,11 @@ if( !isset($_GET["id"]) ){
 }
 $id = $_GET["id"];
 
+$dataJson = file_get_contents("data.json");
+$data = json_decode($dataJson, true);
+
+$kopi = $data["kopi"];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
